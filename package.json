@@ -1,0 +1,19 @@
+{
+  "name": "color-flipper-javascript",
+  "version": "1.0.0",
+  "description": "color flipper javascript example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier \"**/*.{json,md,scss,yaml,yml,js}\""
+  },
+  "keywords": [
+    "color",
+    "flipper"
+  ],
+  "author": "burakkrt",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "2.8.8"
+  }
+}

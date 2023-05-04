@@ -44,6 +44,14 @@ nav .nav-center {
     padding: 0 1.8rem;
 }
 
+.nav-links .nav-link a {
+    transition-duration: 200ms;
+}
+
+.nav-links .nav-link a:hover {
+    color: #D14D72;
+}
+
 .logo-text {
     font-size: 2.6rem;
 }
@@ -54,11 +62,6 @@ nav .nav-center {
 
 .container {
     height: calc(100dvh - 68px);
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
-    /*row-gap: 1.5rem;*/
 }
 
 .container .info {
@@ -69,19 +72,17 @@ nav .nav-center {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 1.5rem;
-    padding: 2rem 2.5rem;
+    row-gap: 2rem;
+    padding: 3rem 8rem;
     border-radius: 12px;
     background-color: #212A3E;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
 .container .color-text {
     color: #F6F1F1;
 }
 
-.container .color-text .color-code {
-
-}
 
 .container .btn-generate {
     cursor: pointer;
@@ -98,4 +99,42 @@ nav .nav-center {
 
 .container .btn-generate:hover {
     color: #146C94;
+}
+
+.container .color-text {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    font-size: 2.2rem;
+}
+
+.container .color-text .material-symbols-outlined {
+    cursor: pointer;
+    transition-duration: 250ms;
+}
+
+.container .color-text .color-code {
+    letter-spacing: 3px;
+}
+
+.container .color-text .material-symbols-outlined:hover {
+    color: #87CBB9;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    nav .nav-center {
+        height: 84px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 12px;
+    }
+
+    .container {
+        height: calc(100dvh - 84px);
+    }
 }

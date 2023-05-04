@@ -1,5 +1,3 @@
-const data = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
-
 const container = document.querySelector('.container');
 const btn = document.querySelector('#generate');
 const colorCodeText = document.querySelector('.color-code');
@@ -24,10 +22,9 @@ copycode.addEventListener('click', function() {
 });
 
 function randomColorCode() {
-  let colorCode = '#';
-  for (let i = 0; i < 6; i++) {
-    const randomNumber = Math.floor(Math.random() * data.length);
-    colorCode += data[randomNumber];
+  const codes = [];
+  for (let i = 0; i < 3; i++) {
+    codes.push(Math.floor(Math.random() * 256));
   }
-  return colorCode;
+  return `rgb(${codes[0]},${codes[1]},${codes[2]})`;
 }

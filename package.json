@@ -2,7 +2,7 @@
   "name": "color-flipper-javascript",
   "version": "1.0.0",
   "description": "color flipper javascript example",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier": "npx prettier \"**/*.{json,md,scss,yaml,yml,js}\""

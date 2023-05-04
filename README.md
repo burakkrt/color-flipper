@@ -41,3 +41,7 @@ or
 ```bash
   npm run prettier "**/*.{js,jsx,ts,tsx,html}" --write
 ```
+
+
+https://user-images.githubusercontent.com/99482906/236313991-0f20eefc-7425-4b3a-a6d2-907e3151fe5d.mp4
+
